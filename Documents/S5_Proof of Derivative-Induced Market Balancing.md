@@ -1,6 +1,6 @@
-# Formula 6: Unilateral Proof of Derivative-Induced Market Balancing
+# Section 6: Proof of Derivative-Induced Market Balancing
 
-## 1. Abstract
+## 1. Intro to proof
 
 This document presents a formal economic argument demonstrating that the introduction of accessible financial derivatives (specifically perpetual futures and options facilitated by an agent like the Omni-Solver) into otherwise isolated, low-liquidity spot markets for newly launched crypto assets unilaterally improves market efficiency and mitigates structurally derived advantages held by insiders. We prove that derivatives introduce necessary two-sided liquidity and price discovery mechanisms, fundamentally altering supply/demand dynamics, capping potential insider gains, and creating counter-opportunities for informed outsiders, thereby forcing convergence towards a more efficient equilibrium compared to the isolated spot market baseline.
 

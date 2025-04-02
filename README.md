@@ -15,8 +15,8 @@ The whitepaper explores the structural issues in isolated spot markets and propo
 *   **[Section 2: Insider Advantage at Token Launch](Documents/S2_Model_Insider%20Advantage%20at%20Token%20Launch.md):** Models the timing and confidence advantages insiders possess at the moment of token launch.
 *   **[Section 3: Pre-Launch Advantage for Insiders](Documents/S3_Model_Pre-Launch%20Advantage%20for%20Insiders.md):** Extends the model to include the financial and psychological preparation advantages insiders gain *before* the launch.
 *   **[Section 4: Advantage from Isolated Spot Markets and Synthetic Asset Solution](Documents/S4_Extended_Advantage%20from%20Isolated%20Spot%20Markets%20and%20Synthetic%20Asset%20Solution.md):** Formalizes the dynamics of isolated spot markets (buy-first advantage, inelastic supply) and demonstrates how synthetic assets introduce elastic supply and two-sided trading to restore equilibrium and cap insider gains.
-*   **[Section 5: Derivation of Insider Advantage and Market Equilibrium](Documents/S4_Derivation%20of%20Insider%20Advantage%20and%20Market%20Equilibrium.md):** Further mathematical derivations related to insider advantage and market equilibrium conditions.
-*   **[Section 6: Unilateral Proof of Derivative-Induced Market Balancing](Documents/S5_Proof%20of%20Derivative-Induced%20Market%20Balancing.md):** Provides a formal economic proof showing that introducing accessible derivatives unilaterally improves market efficiency and mitigates structural insider advantages.
+*   **[Section 4 Extended: Derivation of Insider Advantage and Market Equilibrium](Documents/S4_Derivation%20of%20Insider%20Advantage%20and%20Market%20Equilibrium.md):** Further mathematical derivations related to insider advantage and market equilibrium conditions.
+*   **[Section 5: Unilateral Proof of Derivative-Induced Market Balancing](Documents/S5_Proof%20of%20Derivative-Induced%20Market%20Balancing.md):** Provides a formal economic proof showing that introducing accessible derivatives unilaterally improves market efficiency and mitigates structural insider advantages.
 
 ## Simulation
 
