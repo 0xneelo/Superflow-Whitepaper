@@ -7,10 +7,10 @@ Superflow is a decentralized finance powerhouse combining decades of research an
 Superflow aims to build a comprehensive suite of DeFi tools and infrastructure. The long-term vision encompasses several key components:
 
 *   **[Omni-Solver](./Omni-Solver/Omni-Solver.md):** The initial core component, built on Symmio protocols. It focuses on addressing market inefficiencies (like insider advantage in isolated spot markets) by facilitating the creation of synthetic derivatives. *(See the [Omni-Solver README](./Omni-Solver/Omni-Solver.md) for the detailed whitepaper and simulations).* 
-*   **Perpetual Exchange:** An intent-based and CLOB (Central Limit Order Book) exchange for perpetual futures on any asset, potentially leveraging Rasa, Meta-Solver, and Omni-Solver technologies.**[Super-DEX](./SuperDEX/SuperDEX.md)**
-*   **Options Platform:** Utilizing Symmio Intents for options trading.**[Super-DEX](./SuperDEX/SuperDEX.md)**
-*   **Spot OrderBook DEX:** A traditional spot market decentralized exchange.**[Super-DEX](./SuperDEX/SuperDEX.md)**
-*   **Meta-Solver:** A component related to Symmio's infrastructure (details might be within Symmio's documentation).**[Meta-Solver](./Meta-Solver/Meta-Solver)**
+*   **Perpetual Exchange:** An intent-based and CLOB (Central Limit Order Book) exchange for perpetual futures on any asset, potentially leveraging Rasa, Meta-Solver, and Omni-Solver technologies. **[Super-DEX](./SuperDEX/SuperDEX.md)**
+*   **Options Platform:** Utilizing Symmio Intents for options trading. **[Super-DEX](./SuperDEX/SuperDEX.md)**
+*   **Spot OrderBook DEX:** A traditional spot market decentralized exchange. **[Super-DEX](./SuperDEX/SuperDEX.md)**
+*   **Meta-Solver:** A component related to Symmio's infrastructure (details might be within Symmio's documentation). **[Meta-Solver](./Meta-Solver/Meta-Solver)**
 ## Who is Superflow?
 
 The team brings expertise from various domains within finance and technology:
