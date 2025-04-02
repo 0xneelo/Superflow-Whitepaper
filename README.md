@@ -141,4 +141,4 @@ The `simulation/` directory contains Python scripts to model and analyze the mar
 - **Liquidity**: Market's ability to absorb trading volume (includes buy and sell sides)
 - **Arbitrage**: Risk-free (or low-risk) profit from price differences
 - **Fair Value Premium**: Additional value component in synthetic assets (related to V(t))
-- **Omni-Solver**: Proposed financial instrument/tool to create synthetics and restore equilibrium
+- **Omni-Solver**: Proposed financial infrastructure, utilizing otc-derivatives protocols (e.g. https://symm.io) to create synthetics and restore equilibrium
