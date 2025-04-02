@@ -26,5 +26,5 @@ The team brings expertise from various domains within finance and technology:
 
 ## Repository Structure
 
-*   `/`: Contains the main project README (`main-README.md`).
-*   `/Omni-Solver/`: Contains the specific code, whitepaper (`Documents/`), and simulations (`Simulations/`) related to the Omni-Solver component. See `Omni-Solver/omni-README.md` for details.
+*   `/`: Contains the main project README (README.md`).
+*   `/Omni-Solver/`: Contains the specific code, whitepaper (`Documents/`), and simulations (`Simulations/`) related to the Omni-Solver component. See `Omni-Solver/Omni-Solver.md` for details.
