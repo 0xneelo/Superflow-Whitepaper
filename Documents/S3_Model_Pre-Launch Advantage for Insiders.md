@@ -1,4 +1,4 @@
-# Extended Mathematical Model: Pre-Launch Advantage for Insiders
+# Section 3 - Extended Mathematical Model: Pre-Launch Advantage for Insiders
 
 ## Step 0: Define Pre-Launch Time (t₋ₙ)
 

@@ -1,4 +1,4 @@
-# Mathematical Proof Outline
+# Section 1 - Mathematical Proof Outline
 
 ## Step 1: Define Market Participants and Information Sets
 

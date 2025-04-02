@@ -1,4 +1,4 @@
-# Mathematical Derivation of Insider Advantage and Market Equilibrium
+# Section 4A - Mathematical Derivation of Insider Advantage and Market Equilibrium
 
 ## 1. Formal Definition of Isolated Spot Market
 

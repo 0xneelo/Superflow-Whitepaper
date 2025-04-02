@@ -1,4 +1,4 @@
-# Mathematical Model: Insider Advantage at Token Launch
+# Section 2 - Mathematical Model: Insider Advantage at Token Launch
 
 ## Step 1: Setup the Timeline and Market Participants
 

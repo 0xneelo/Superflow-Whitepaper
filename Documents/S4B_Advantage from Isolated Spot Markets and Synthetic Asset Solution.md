@@ -1,4 +1,4 @@
-# Extended Model: Advantage from Isolated Spot Markets and Synthetic Asset Solution
+# Section 4B - Extended Model: Advantage from Isolated Spot Markets and Synthetic Asset Solution
 
 ## Step 1: Formalizing Isolated Spot Markets
 

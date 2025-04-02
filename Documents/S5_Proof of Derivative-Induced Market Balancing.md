@@ -1,4 +1,4 @@
-# Section 6: Proof of Derivative-Induced Market Balancing
+# Section 5 - Proof of Derivative-Induced Market Balancing
 
 ## 1. Intro to proof
 
