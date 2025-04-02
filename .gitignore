@@ -1,0 +1,19 @@
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Simulation output/cache
+simulation/helius_transactions_*.json
+simulation/launch_analysis_*.png
+simulation/market_simulation_*.png 
+simulation/launch_analyzer.py
+simulation/market_analyzer.py
+simulation/launch_analyzer.py
+simulation/market_analyzer.py
+simulation/launch_analyzer.py
+simulation/market_analyzer.py
+

@@ -10,7 +10,7 @@
 - Let I(t) represent information available at time t
 - Insiders have I(t₀), while outsiders only have I(t₀ + N)
 
-## Step 2: Arbitrage Opportunity (Economic Model)
+## Step 2: Information Asymmetry Opportunity (Economic Model)
 
 Consider a simplified asset price model, where the price at any time t is:
 
@@ -21,12 +21,12 @@ Where:
 - α measures the price impact of information
 - εₜ is a random noise component, εₜ ~ N(0, σ²)
 
-### Arbitrage Gain for Insiders (Gₐ):
+### Economical Gain for Insiders (Gₐ):
 Insiders trade at t₀:
 
 Gₐ = E[P(t) - P(t₀) | I(t₀)] = α · I(t₀)
 
-### Arbitrage Gain for Outsiders (Gₒ):
+### Economical Gain for Outsiders (Gₒ):
 Outsiders trade at t₀ + N:
 
 Gₒ = E[P(t') - P(t) | I(t)], t' > t > t₀
@@ -35,7 +35,7 @@ Since by definition, I(t₀) is superior (earlier), we have:
 
 Gₐ > Gₒ
 
-Thus, insiders always have strictly greater expected gains.
+Thus, insiders always have strictly greater expected gains due to information asymmetry.
 
 ## Step 3: Game-Theoretical Nash Equilibrium
 
@@ -54,7 +54,7 @@ Model the game with two strategies:
 
 U_F(U) > U_F(E)
 
-Due to early access and arbitrage.
+Due to early access and information asymmetry.
 
 Thus, Nash Equilibrium favors unethical behavior:
 
@@ -88,9 +88,9 @@ F(t) = P(t) + β · V(t)
 
 where:
 - V(t) is the fair-value premium derived from continuous open market participation
-- β normalizes arbitrage premium
+- β normalizes information asymmetry premium
 
-Omni-Solver eliminates isolated arbitrage opportunities (Gₐ ≈ Gₒ):
+Omni-Solver eliminates isolated information asymmetry opportunities (Gₐ ≈ Gₒ):
 
 E[F(t₀) | I(t₀)] ≈ E[F(t) | I(t)], t ≥ t₀
 
@@ -100,7 +100,7 @@ This theoretically neutralizes insiders' asymmetric advantages, enforcing market
 
 mathematically demonstrate that isolated spot markets structurally incentivize unethical insider behavior by formally showing:
 
-1. **Information Asymmetry**: Earlier market participation yields greater arbitrage gains (Gₐ > Gₒ)
+1. **Information Asymmetry**: Earlier market participation yields greater economical gains (Gₐ > Gₒ)
 2. **Game-Theoretic Dominance**: Unethical behavior is rationally dominant due to immediate financial incentives
 3. **Zero-Entry Cost Markets**: Incentivize repeated unethical behavior through minimal barriers
 4. **Fairness via Financial Innovation**: The introduction of a tool like Omni-Solver theoretically equalizes expected returns and removes asymmetric insider advantages.
