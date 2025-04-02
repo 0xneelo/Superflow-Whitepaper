@@ -2,7 +2,9 @@
 
 ## Abstract
 
-The prevailing structure of contemporary digital asset markets inherently favors insiders due to the isolated nature of spot market mechanisms. This isolation systematically generates arbitrage opportunities exploitable primarily by those possessing privileged access (insiders), leading to structural disadvantages for non-insiders (retail, ethical founders). This imbalance incentivizes ethically questionable launch strategies. The introduction of a generalized financial instrument, the "Omni-Solver," capable of synthesizing derivatives (like perpetual futures) for any asset, presents a solution. By democratizing access to these instruments, it aims to neutralize insider advantages, mitigate isolated market arbitrage, and foster equitable market participation and efficiency.
+The prevailing structure of contemporary digital asset markets inherently favors insiders due to the isolated nature of spot market mechanisms. These mechanisms limit sell-side liquidity in early phases, and enable information-based arbitrage, primarily benefiting insiders—such as KOLs, MEV operators, and infrastructure providers—who possess exclusive access or technical advantages. By being able to participate early, these insiders extract disproportionate value. Consequently, non-insiders like retail investors and ethical founders face structural disadvantages from delayed entry and limited opportunities. This imbalance incentivizes founders towards launch strategies that maximize insider gains, potentially compromising ethical considerations.
+
+We propose the 'Omni-Solver,' a generalized financial infrastructure designed to synthesize perpetual derivatives for any asset. This presents a transformative solution by modifying the existing Nash equilibrium: it equips ethical participants with financial tools to counterbalance the predominant advantages held by unethical players. By democratizing access to derivatives, the Omni-Solver aims to neutralize insiders' asymmetric advantages, reduce distortions caused by information asymmetry in isolated markets, and ultimately foster more equitable and efficient market participation.
 
 *This repository contains the whitepaper detailing the economic and game-theoretical arguments, along with Python scripts simulating and analyzing these market dynamics.*
 
@@ -14,39 +16,39 @@ The whitepaper explores the structural issues in isolated spot markets and propo
 *   **[Section 1: Mathematical Proof Outline](Documents/S1_Mathematical%20Proof%20Outline.md):** Initial economic and game-theoretical framework outlining information asymmetry and the dominance of unethical strategies in isolated markets.
 *   **[Section 2: Insider Advantage at Token Launch](Documents/S2_Model_Insider%20Advantage%20at%20Token%20Launch.md):** Models the timing and confidence advantages insiders possess at the moment of token launch.
 *   **[Section 3: Pre-Launch Advantage for Insiders](Documents/S3_Model_Pre-Launch%20Advantage%20for%20Insiders.md):** Extends the model to include the financial and psychological preparation advantages insiders gain *before* the launch.
-*   **[Section 4: Advantage from Isolated Spot Markets and Synthetic Asset Solution](Documents/S4_Extended_Advantage%20from%20Isolated%20Spot%20Markets%20and%20Synthetic%20Asset%20Solution.md):** Formalizes the dynamics of isolated spot markets (buy-first advantage, inelastic supply) and demonstrates how synthetic assets introduce elastic supply and two-sided trading to restore equilibrium and cap insider gains.
-*   **[Section 4 Extended: Derivation of Insider Advantage and Market Equilibrium](Documents/S4_Derivation%20of%20Insider%20Advantage%20and%20Market%20Equilibrium.md):** Further mathematical derivations related to insider advantage and market equilibrium conditions.
+*   **[Section 4A: Advantage from Isolated Spot Markets and Synthetic Asset Solution](Documents/S4B_Advantage%20from%20Isolated%20Spot%20Markets%20and%20Synthetic%20Asset%20Solution.md):** Formalizes the dynamics of isolated spot markets (buy-first advantage, inelastic supply) and demonstrates how synthetic assets introduce elastic supply and two-sided trading to restore equilibrium and cap insider gains.
+*   **[Section 4B: Derivation of Insider Advantage and Market Equilibrium](Documents/S4A_Derivation%20of%20Insider%20Advantage%20and%20Market%20Equilibrium.md):** Further mathematical derivations related to insider advantage and market equilibrium conditions.
 *   **[Section 5: Unilateral Proof of Derivative-Induced Market Balancing](Documents/S5_Proof%20of%20Derivative-Induced%20Market%20Balancing.md):** Provides a formal economic proof showing that introducing accessible derivatives unilaterally improves market efficiency and mitigates structural insider advantages.
 
 ## Simulation
 
-The `simulation/` directory contains Python scripts to model and analyze the market dynamics discussed in the whitepaper.
+The `Simulations/` directory contains Python scripts to model and analyze the market dynamics discussed in the whitepaper.
 
 ### Scripts
 
-1.  **`market_simulation.py`**:
+1.  **`market_simulation.py`** (`Simulations/market_simulation.py`):
     *   Runs agent-based simulations of token launches.
     *   Models 'Insider' and 'Outsider' agents with different behaviors (timing, capital, rationality, FOMO).
     *   Compares market price evolution and agent profitability in an `isolated` market versus a hypothetical `synthetic` market (where selling/shorting influences price).
-    *   Generates plots (`market_simulation_isolated.png`, `market_simulation_synthetic.png`) visualizing the price trajectory and agent entry points.
+    *   Generates plots (`Simulations/market_simulation_isolated.png`, `Simulations/market_simulation_synthetic.png`) visualizing the price trajectory and agent entry points.
 
-2.  **`launch_analyzer.py`**:
+2.  **`launch_analyzer.py`** (`Simulations/launch_analyzer.py`):
     *   Analyzes real-world data for a specific Solana token launch (example: Libra token, Pair Address `BzzMNvfm7T6zSGFeLXzERmRxfKaNLdo4fSzvsisxcSzz`).
     *   Fetches historical price/volume data from DexScreener.
     *   Fetches detailed transaction history from the Helius API (requires API key).
     *   Analyzes transactions around the launch timestamp to identify patterns of early buying activity, potentially indicating insider trading.
-    *   Plots the launch price/volume chart (`launch_analysis_*.png`).
-    *   Includes transaction caching (`helius_transactions_*.json`) to avoid repeated Helius API calls.
+    *   Plots the launch price/volume chart (`Simulations/launch_analysis_*.png`).
+    *   Includes transaction caching (`Simulations/helius_transactions_*.json`) to avoid repeated Helius API calls.
 
 ### Setup
 
-1.  Navigate to the repository root.
+1.  Navigate to the `Omni-Solver` directory.
 2.  Create a Python virtual environment (optional but recommended).
 3.  Install dependencies:
     ```bash
-    pip install -r simulation/requirements.txt
+    pip install -r Simulations/requirements.txt
     ```
-4.  For `launch_analyzer.py`, create a `.env` file in the repository root directory and add your Helius API key:
+4.  For `launch_analyzer.py`, create a `.env` file *in the `Omni-Solver` directory* and add your Helius API key:
     ```
     HELIUS_API_KEY=YOUR_HELIUS_API_KEY_HERE
     # Optionally add SOLSCAN_API_JWT=YOUR_SOLSCAN_PRO_JWT_HERE for transfer count verification
@@ -54,21 +56,21 @@ The `simulation/` directory contains Python scripts to model and analyze the mar
 
 ### Usage
 
-1.  Run the theoretical market simulation:
+1.  Run the theoretical market simulation (from the `Omni-Solver` directory):
     ```bash
-    python simulation/market_simulation.py
+    python Simulations/market_simulation.py
     ```
     *(Check the script to uncomment/enable the 'synthetic' market run if desired)*
 
-2.  Run the real-world launch analysis:
+2.  Run the real-world launch analysis (from the `Omni-Solver` directory):
     ```bash
-    python simulation/launch_analyzer.py
+    python Simulations/launch_analyzer.py
     ```
     *(Note: The Helius transaction fetch can take a significant amount of time and API credits, especially on the first run or if `force_helius_refresh` is set to `True` in the script)*
 
 ## Glossary
 
-*(Retained from original README - defines terms used in mathematical models)*
+*(Defines terms used in the whitepaper's mathematical models)*
 
 ### Time Variables
 - **t₀**: Token launch time (exact moment token becomes tradable)

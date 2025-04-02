@@ -1,19 +1,75 @@
 # Environment variables
 .env
+*.env.* # Include potential variants like .env.local
 
-# Python cache
+# Python cache & artifacts
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
 
-# Simulation output/cache
-simulation/helius_transactions_*.json
-simulation/launch_analysis_*.png
-simulation/market_simulation_*.png 
-simulation/launch_analyzer.py
-simulation/market_analyzer.py
-simulation/launch_analyzer.py
-simulation/market_analyzer.py
-simulation/launch_analyzer.py
-simulation/market_analyzer.py
+# Python Virtual Environments
+venv/
+env/
+.venv/
+.env/
+ENV/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE / Editor directories
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Simulation output/cache (Updated paths)
+Omni-Solver/Simulations/helius_transactions_*.json
+Omni-Solver/Simulations/launch_analysis_*.png
+Omni-Solver/Simulations/market_simulation_*.png
+
+# Specific log files if any
+*.log
 
